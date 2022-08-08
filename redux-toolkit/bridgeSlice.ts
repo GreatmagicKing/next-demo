@@ -4,11 +4,11 @@ const bridgeSlice = createSlice({
     name: 'bridge',
     initialState: [{}],
     reducers: {
-        SET_BRIDGE(state, action) {
+        setbridge(state, action) {
             return action.payload
         }
     }
 })
-export const { SET_BRIDGE } = bridgeSlice.actions
+export const { setbridge } = bridgeSlice.actions
 
 export default bridgeSlice.reducer

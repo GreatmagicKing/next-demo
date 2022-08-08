@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-
+import bridgeReducer from './bridgeSlice'
 const store = configureStore({
-  reducer: rootReducer
+  reducer: {
+    bridge:bridgeReducer
+  }
 })
 
 export default store
